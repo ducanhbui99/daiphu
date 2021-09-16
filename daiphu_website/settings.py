@@ -151,3 +151,6 @@ LOGOUT_REDIRECT_URL = "public:index"
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DEFAULT_FROM_EMAIL = "ducanhb.bui99@gmail.com"
 
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
