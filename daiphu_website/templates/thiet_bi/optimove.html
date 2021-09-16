@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block title %} Module Điều Khiển Tay Robot {% endblock%}
+
+
+{% block content %}
+<!-- description -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../../../static/theme/assets/img/equip_auto/optimove-bg.jpeg" alt="First slide">
+      </div>
+    </div>
+</div>
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_auto_url }}">Thiết Bị Phun Tự Động</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ optimove_url }}">Module Điều Khiển Tay Robot</a></li>
+    </ol>
+</nav>
+<!--content-->
+<div class="row">
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_auto/cr07.png" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Module Điều Khiển Tay Robot CR07</h3>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_auto/cr08.png" class="card-img-top img-fluid2" alt="" title="ZA vertical reciprocator with 4 guns">
+            <div class="card-body">
+                <h3 class="card-title text-red">Module Điều Khiển Tay Robot CR08</h3>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

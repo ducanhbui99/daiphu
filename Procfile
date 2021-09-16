@@ -1,0 +1,1 @@
+web: gunicorn daiphu_website.wsgi --log-file -

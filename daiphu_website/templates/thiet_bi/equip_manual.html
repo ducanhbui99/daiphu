@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title %} Thiết Bị Phun Tay {% endblock%}
+
+{% block content %}
+<!-- carousel slide -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 " src="../../static/theme/assets/img/equip_manual/manual_gun2.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item" >
+      <img class="d-block w-100 " src="../../static/theme/assets/img/equip_manual/manual_booth_bg.jpg" alt="Second slide">
+    </div>
+  </div>
+</div>
+<!-- breadcrumb nav -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_manual_url }}">Thiết Bị Phun Tay</a></li>
+    </ol>
+</nav>
+
+<div class="row">
+  <!-- item 1-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center gcard zoomIn animated">
+          <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_manual/manual_gun.jpg" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title text-red">Súng Phun Tay OptiSelect® Pro:<br> Súng phun tay cho chất lượng sản phẩm toàn diện</h3>
+            <p>Súng phun tay được thiết kế để bảo đảm độ tin cậy cho các thách thức hàng ngày doanh nghiệp gặp phải.</p>
+          </div>
+          <div class="card-footer" style="font-size:18px;">
+              <a class="text-decoration-none stretched-link" href="{{ optiselect_url }}">
+                  <div style="color:black"><span class="fas fa-link" style="color:black"></span>&#9 Súng Phun</div>
+              </a>
+          </div>                  
+      </div>
+  </div>
+  <!-- item 2-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_manual/manual_booth.jpg" alt="..." />
+        <div class="card-body" >
+          <h3 class="card-title text-red">Buồng Phun Sơn OptiFlex®</h3>
+          <p>Hệ thống buồng phun có thể dễ dàng thiết kế dựa theo nhu cầu của khách hàng, đưa ra những sản phẩm của công trình với chất lượng hàng đầu, và bảo vệ năng lượng tối đa.</p>
+        </div>
+        <div class="card-footer" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ manual_booth_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Buồng Phun Sơn</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 3-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_pump.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red"> Máy Bơm Bột OptiSpray AP01: sự ra đời của công nghệ bơm bột</h3>
+          <p>Màng sơn được phun lên 1 cách hoàn hảo sẽ được duy trì trong thời gian dài, ngay cả với ống dẫn bột dài hơn và dung tích bột ra nhiều hơn với năng suất bơm có thể tới 600g/phút.</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ manual_optispray_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Máy Bơm Bột</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 4-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_injector.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Injector OptiFlow cho hệ thống phun tay</h3>
+          <p>Bảo đảm dung tích bột được phun ra đều đặn. Thích hợp cho việc đổi màu bột và giá điều hành thấp với công nghệ injecotr tiên tiến nhất.</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ auto_injector_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Injector</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 5-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_manual/manual_cart.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Xe đẩy OptiFlex® Pro: <br> thiết kế cho năng suất cao</h3>
+          <p>Thay đổi bột dễ dàng và nhanh chóng với bột kết nối trực tiếp từ thùng chứa.</p>
+        </div>
+        <div class="card-footer" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ manual_optiflex_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Xe Đẩy</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  
+
+  
+  
+
+</div>
+{% endblock %}

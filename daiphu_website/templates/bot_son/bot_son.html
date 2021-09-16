@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} powder_coating {% endblock%}
+
+{% block content %}
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-md-3 " >
+                            <div class="container">
+                                <img class="displayed" src="../../static/theme/assets/img/protech-logo2.jpg" height="233px">
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6" style="display:flex; align-items:center">                            
+                            <h6> 
+                                Với kĩ thuật tiên tiến và hệ thống dây chuyền công nghệ sản xuất hàng đầu thế giới,  Công ty TNHH Thương mại Đại Phú - thành viên của Protech - Oxyplast Group cam kết mang đến cho khách hàng sản phẩm chất lượng đạt tiêu chuẩn ISO:9001-2015.
+                                <br> <br>
+                                Hướng tới sự hoàn hảo về cả chất lượng và thẩm mỹ, sản phẩm sơn bột Đại Phú đa dạng về màu sắc và thích hợp với nhiều bề mặt khác nhau, được tin dùng và sử dụng rộng rãi trên cả nước.
+                            </h6>
+                        </div>
+                        <div class="col-md-3" >
+                            <img class="displayed" src="../../static/theme/assets/img/chat-icon.png" height="233px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ bot_son_url }}">Sơn Bột</a></li>
+    </ol>
+</nav>
+
+<div class="container">
+<div class="row">
+    <div class="col-lg-6 col-sm-6 mb-4">
+        <!-- Portfolio item 1-->
+        <div class="card h-100 text-center">
+            
+            <img class="img-fluid3" src="../../static/theme/assets/img/gas1.jpg" alt="..." />
+    
+                <div class="card-footer bg-gray text-white" style="font-size:18px">
+                    <a class="text-decoration-none stretched-link" href="{{ trong_nha_url }}">
+                        <div style="color: black">Trong Nhà</div> 
+                    </a>
+                </div>                  
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-6 mb-4">
+        <!-- Portfolio item 2-->
+        <div class="card h-100 text-center">
+            
+            <img class="img-fluid3" src="../../static/theme/assets/img/gas1.jpg" alt="..." />
+    
+                <div class="card-footer bg-gray text-white" style="font-size:18px">
+                    <a class="text-decoration-none stretched-link" href="{{ ngoai_troi_url }}">
+                        <div style="color: black">Ngoài Trời</div> 
+                    </a>
+                </div>                  
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

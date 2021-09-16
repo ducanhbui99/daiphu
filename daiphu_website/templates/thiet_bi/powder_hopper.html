@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block title %} Thùng Chứa Bột {% endblock%}
+
+
+{% block content %}
+<!-- description -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../../../static/theme/assets/img/equip_auto/hopper-bg.jpeg" alt="First slide">
+      </div>
+    </div>
+</div>
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_auto_url }}">Thiết Bị Phun Tự Động</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ powder_hopper_url }}">Thùng Chứa Bột</a></li>
+    </ol>
+</nav>
+<!--content-->
+<div class="row">
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/hopper1.jpeg" class="card-img-top img-fluid2" alt="" title="Powder Hopper">
+            <div class="card-body">
+                <h3 class="card-title text-red">Tất cả bột và súng phun mà bạn cần</h3>
+                <p>Thùng chứa bột có sẵn ở nhiều dung tích, từ 50l tới 200l và có thể dễ dàng dùng cho tới 32 súng phun.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/hopper2.jpeg" class="card-img-top img-fluid2" alt="" title="Powder Hopper">
+            <div class="card-body">
+                <h3 class="card-title text-red">Làm tơi bột hoàn hảo cho khâu chuẩn bị bột</h3>
+                <p>Hệ thống cao cấp làm tơi bột phân tán khí nén trong mọi bề mặt của thùng chứa giúp tạo nên bột được phun ra luôn trong tình trạng tốt.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/hopper3.jpeg" class="card-img-top img-fluid2" alt="" title="Powder Hopper">
+            <div class="card-body">
+                <h3 class="card-title text-red">Dễ dàng tích hợp vào mọi hệ thống</h3>
+                <p>Bột mới, bột thu hồi, và ống hơi giúp tạo nên khả năng tích hợp vào mọi hệ thống.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/hopper4.jpeg" class="card-img-top img-fluid2" alt="" title="Powder Hopper">
+            <div class="card-body">
+                <h3 class="card-title text-red">Tích hợp cảm biến mức độ bột</h3>
+                <p>Tia cảm biến - được điều chỉnh theo chiều cao của thùng chứa - sẽ phát động cảnh báo hoặc tự động thêm bột mới khi dung tích bột quá thấp.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/hopper5.jpeg" class="card-img-top img-fluid2" alt="" title="Powder Hopper">
+            <div class="card-body">
+                <h3 class="card-title text-red">Tính năng rung sàn cho các loại bột khó</h3>
+                <p>Thùng chứa bột có thể được tích hợp thêm tính năng rung sàn giúp làm tơi bột cho các loại bột khó làm tơi.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+                <img src="../../../static/theme/assets/img/equip_auto/hopper6.jpeg" class="card-img-top img-fluid2" alt="" title="Powder Hopper">
+            <div class="card-body">
+                <h3 class="card-title text-red">Dễ dàng di chuyển nhờ vào xe đẩy bột</h3>
+                <p>Thùng chứa bột có thể để trên xe đẩy để dễ dàng di chuyển tới nơi khách hàng cần.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/hopper7.jpeg" class="card-img-top img-fluid2" alt="" title="Powder Hopper">
+            <div class="card-body">
+                <h3 class="card-title text-red">Dễ dàng tháo để bảo trì</h3>
+                <p>Thùng chứa bột có thể tháo hoàn toàn giúp cho công đoạn bảo trì cho thay sàn làm tơi hoặc các bộ phận khác một cách dễ dàng và nhanh chóng.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

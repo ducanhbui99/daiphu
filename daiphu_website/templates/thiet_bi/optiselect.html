@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block title %} Súng Phun Tay {% endblock%}
+
+
+{% block content %}
+<!-- description -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 " src="../../../static/theme/assets/img/equip_manual/manual_gun2.jpg" alt="First slide">
+      </div>
+    </div>
+</div>
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_manual_url }}">Thiết Bị Phun Tay</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ optiselect_url }}">Súng Phun</a></li>
+    </ol>
+</nav>
+<div class="row">
+    <!-- item 1-->
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_manual/for-dpp01.jpg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Súng Phun Tay OptiSelect® for DPP01 </h3>
+                <p>Without big investments you can reduce idle times and maximize your productivity.</p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- item 2-->
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_manual/gm02.jpg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Súng Phun Tay OptiSelect® GM02 </h3>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- item 3-->
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_manual/gm03.jpg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Súng Phun Tay OptiSelect® GM03 </h3>
+            </div>
+            
+        </div>
+    </div>
+    <!-- item 4-->
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_manual/gm04.jpg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Súng Phun Tay OptiSelect® Pro GM04</h3>
+            </div>
+            
+        </div>
+    </div>
+    <!-- item 5-->
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_manual/gm04-cf.jpg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Súng Phun Tay OptiSelect® Pro GM04-CF </h3>
+            </div>           
+        </div>
+    </div>
+</div>
+{% endblock %}

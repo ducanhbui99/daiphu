@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block title %} Thiết Bị Phun Sơn {% endblock%}
+
+
+{% block content %}
+<!-- description -->
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-md-3 " >
+                            <div class="container">
+                                <img class="displayed" src="../../static/theme/assets/img/protech-logo2.jpg" height="233px">
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6" style="display:flex; align-items:center">                            
+                            <h6> 
+                                Năm 1995, với sự chuyên nghiệp và uy tín trong hoạt động, Đại Phú vinh dự trở thành nhà phân phối độc quyền tại Việt Nam cho hãng thiết bị sơn nổi tiếng từ Thụy Sĩ - GEMA.
+                                <br>
+                                Tại Đại Phú, khách hàng có thể lựa chọn các mặt hàng thiết bị phun sơn được nhập từ GEMA, nổi tiếng với chất lượng và độ bền bĩ, với giá hợp lí nhất.
+                            </h6>
+                        </div>
+                        <div class="col-md-3" >
+                            <img class="displayed" src="../../static/theme/assets/img/chat-icon.png" height="233px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+    </ol>
+</nav>
+<!--content-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-sm-6 mb-4">
+            <!-- Portfolio item 1-->
+            <div class="card text-center" >
+                
+                <img class="img-fluid3" src="../../static/theme/assets/img/equip_auto/auto-booth1.jpeg" alt="..." />
+        
+                <div class="card-footer text-white text-center" style="font-size:18px">
+                    <a class="text-decoration-none stretched-link" href="{{ equip_auto_url }}">
+                        
+                        <div style="color: rgba(0, 0, 0, 0.781)"><span class="fas fa-link"></span>&#9 Thiết Bị Phun Tự Động </div> 
+                    </a>
+                </div>                  
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+            <div class="card text-center">
+                
+                <img class="img-fluid3" src="../../static/theme/assets/img/equip_manual/manual_booth1.jpeg" alt="..." />
+        
+                <div class="card-footer text-white" style="font-size:18px;">
+                    <a class="text-decoration-none stretched-link" href="{{ equip_manual_url }}">
+                        <div style="color:black"><span class="fas fa-link"></span>&#9 Thiết Bị Phun Tay</div>
+                    </a>
+                </div>                  
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block title %} Buồng Phun Tự Động {% endblock%}
+
+
+{% block content %}
+<!-- description -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../../../static/theme/assets/img/equip_auto/auto-booth-bg.jpeg" alt="First slide">
+      </div>
+    </div>
+</div>
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_auto_url }}">Thiết Bị Phun Tự Động</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ auto_booth_url }}">Buồng Phun Tự Động</a></li>
+    </ol>
+</nav>
+<div class="row">
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_auto/auto-booth1.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">MagicCylinder® EquiFlow®: thiết kế buồng theo hình vòng cung độc đáo</h3>
+                <p>MagicCylinder mang đến việc thay đổi màu nhanh nhẹn nhờ tới thiết kế hình vòng cùng độc lạ và công nghệ EquiFlow.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_auto/auto-booth2.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">MagicCompact® EquiFlow®: the compact color change solution</h3>
+                <p>Sự hiệu quả và việc đổi màu nhanh nhẹn của công nghệ EquiFlow được kết hợp vào hệ thống buồng gọn gàng, thích hợp cho mọi địa hình nhà xưởng.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_auto/auto-booth3.jpeg" class="card-img-top img-fluid2" alt="" title="MagicCompact® XXL">
+            <div class="card-body">
+                <h3 class="card-title text-red">MagicCompact® XXL cho các sản phẩm cỡ lớn</h3>
+                <p>1 giải pháp cho việc đổi màu cho các sản phẩm cỡ lớn như thuyền và dụng cụ xây dựng. Thích hợp cho việc thay đổi giữa sơn nước và sơn bột tĩnh điện.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_auto/auto-booth4.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">MagicPlus: thích hợp cho mọi trường hợp</h3>
+                <p>Hệ thống buồng phun với năng suất cao cho sản phẩm với bề mặt tuyệt vời, với khả năng thay đổi màu nhanh và giá sửa chữa thấp.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,116 @@
+{% load static %}
+
+
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){		
+		window.addEventListener('scroll', function() {	       
+			if (window.scrollY > 30) {
+				document.getElementById('mainNav').classList.add('fixed-top');
+				// add padding top to show content behind navbar
+				navbar_height = document.querySelector('.navbar').offsetHeight;
+				document.body.style.paddingTop = navbar_height + 'px';
+			} else {
+			 	document.getElementById('mainNav').classList.remove('fixed-top');
+				 // remove padding top from body
+				document.body.style.paddingTop = '0';
+			} 
+		});
+	}); 
+</script>
+
+<div class="container">
+    <div class="row">          
+        <div class="col-lg-4 text-lg-start" style="color: white">
+            <span class="fa fa-phone"></span>                           
+            <a href="tel://+ 84 28 37653387"> +84 28 37653387</a>                                          
+        </div>
+    </div> 
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light py-1 " style="background-color: #E0DEDE;" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="{{ index_url }}"><img src="{% static 'theme/assets/img/logo.png' %}" width="110" height="65" alt=""></a>        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            
+            <ul class="navbar-nav my-2 my-lg-0" >    
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == about_url %}active{% endif %}" href="{{ about_url }}">Về Chúng Tôi</a>
+                </li>                        
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle {% if request.path == san_pham_url %}active{% endif %}" href="{{ san_pham_url }}">Sản Phẩm</a>
+                    <ul class="dropdown-menu" >
+                        <li>
+                            <a class="dropdown-item {% if request.path == bot_son_ur %}active{% endif %}" href="{{ bot_son_url }}">Bột Sơn &raquo;</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li class="dropdown">
+                                    <a class="dropdown-item {% if request.path == trong_nha_url %}active{% endif %}"  href="{{trong_nha_url}}">Trong Nhà &raquo;</a>
+                                    <ul class="dropdown-submenu dropdown-menu">
+                                        <a class="dropdown-item {% if request.path == he_epoxy_url %}active{% endif %}" href="{{ he_epoxy_url }}">Hệ Epoxy</a>
+                                        <a class="dropdown-item {% if request.path == he_polyester_epoxy_url %}active{% endif %}" href="{{ he_polyester_epoxy_url }}">Hệ Polyester-Epoxy </a>
+                                
+                                    </ul>
+                                </li>
+                                <li class="dropdown"> 
+                                    <a class="dropdown-item {% if request.path == ngoai_troi_url %}active{% endif %}"  href="{{ ngoai_troi_url }}">Ngoài Trời &raquo;</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <a class="dropdown-item {% if request.path == he_polyester_tgic_url %}active{% endif %}" href="{{ he_polyester_tgic_url }}">Hệ Polyester-TGIC </a>
+                                        <a class="dropdown-item {% if request.path == he_polyester_haa_url %}active{% endif %}" href="{{ he_polyester_haa_url }}">Hệ Polyester-HAA</a>
+                                        <a class="dropdown-item {% if request.path == he_polyester_urithane_url %}active{% endif %}" href="{{ he_polyester_urethane_url }}">Hệ Polyester-Urethane</a>                            
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item {% if request.path == thiet_bi_url %}active{% endif %}" href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn &raquo;</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li>
+                                    <a class="dropdown-item {% if request.path == equip_auto_url %}active{% endif %}"  href="{{ equip_auto_url }}">Thiết Bị Tự Động &raquo;</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <a class="dropdown-item {% if request.path == optigun_url %}active{% endif %}" href="{{ optigun_url }}">Súng Phun Tự Động</a>
+                                        <a class="dropdown-item {% if request.path == optiflex_url %}active{% endif %}" href="{{ optiflex_url }}">Bộ Điều Khiển Trung Tâm</a>
+                                        <a class="dropdown-item {% if request.path == optispray_url %}active{% endif %}" href="{{ optispray_url }}">Máy Bơm Bột</a>
+                                        <a class="dropdown-item {% if request.path == auto_inject_url %}active{% endif %}" href="{{ auto_injector_url }}">Injector</a>
+                                        <a class="dropdown-item {% if request.path == optistar_url %}active{% endif %}" href="{{ optistar_url }}">Module Điều Khiển Súng Phun</a>
+                                        <a class="dropdown-item {% if request.path == multistar_url %}active{% endif %}" href="{{ multistar_url }}">Bộ Điều Khiển Súng Phun Trung Tâm</a>
+                                        <a class="dropdown-item {% if request.path == powder_center_url %}active{% endif %}" href="{{ powder_center_url }}">Bộ Điều Khiển Bột Trung Tâm</a>
+                                        <a class="dropdown-item {% if request.path == powder_hopper_url %}active{% endif %}" href="{{ powder_hopper_url }}">Thùng Chứa Bột</a>
+                                        <a class="dropdown-item {% if request.path == auto_booth_url %}active{% endif %}" href="{{ auto_booth_url }}">Buồng Phun Tự Động</a>
+                                        <a class="dropdown-item {% if request.path == enamel_booth_url %}active{% endif %}" href="{{ enamel_booth_url }}">Buồng Phun Cho Bột Enamel</a>
+                                        <a class="dropdown-item {% if request.path == reciprocator_url %}active{% endif %}" href="{{ reciprocator_url }}">Tay Robot</a>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item {% if request.path == equip_manual_url %}active{% endif %}"  href="{{ equip_manual_url }}">Thiết Bị Phun Tay &raquo;</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+    
+                                        <a class="dropdown-item {% if request.path == optiselect_url %}active{% endif %}" href="{{ optiselect_url }}">Súng Phun Tay </a>
+                                        <a class="dropdown-item {% if request.path == manual_booth_url %}active{% endif %}" href="{{ manual_booth_url }}">Buồng Phun</a>
+                                        <a class="dropdown-item {% if request.path == manual_optispray_url %}active{% endif %}" href="{{ manual_optispray_url }}">Máy Bơm Bột</a>
+                                        <a class="dropdown-item {% if request.path == manual_injector_url %}active{% endif %}" href="{{ manual_injector_url }}">Injector</a>
+                                        <a class="dropdown-item {% if request.path == manual_optiflex_url %}active{% endif %}" href="{{ manual_optiflex_url }}">Xe Đấy</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == contact_url %}active{% endif %}" href="{{ contact_url }}">Thông Tin Liên Hệ</a>
+                </li>                
+            </ul>
+
+            
+        </div>        
+        
+    </div>
+</nav>
+
+    
+
+

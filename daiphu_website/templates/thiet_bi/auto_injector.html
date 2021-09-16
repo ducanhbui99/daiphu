@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block title %} Injector cho Hệ thống tự động {% endblock%}
+
+
+{% block content %}
+<!-- description -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+
+
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../../../static/theme/assets/img/equip_auto/auto_injector1.jpeg" alt="First slide">
+      </div>
+
+    </div>
+</div>
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_auto_url }}">Thiết Bị Phun Tự Động</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ auto_injector_url }}">Injector</a></li>
+    </ol>
+</nav>
+<div class="row">
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/auto_injector2.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Thiết kế đẹp đẽ </h3>
+                <p>Sự độc đáo trong thiết kế của Injector giúp giảm thiểu các sự hào mòn của phụ tùng, bảo đảm lượng bột được phun ra đều đặn trong thời gian dài và dễ dàng tích hợp với mọi hệ thống.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/auto_injector3.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Đáng tin cậy và hiệu suất không đổi</h3>
+                <p>Sự dáng tin cậy và duy trì hiệu suất được bảo đảm bởi việc thay đổi đầu lọc dễ dàng mà không cần phải thay cả Injector.&nbsp;</p>
+                <div>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/auto_injector4.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Bột phun ra đều đặn </h3>
+                <p>Injector OptiFlow được thiết kế độc đáo với góc nghiêng 135° giảm sự hào mòn phụ tùng và bảo đảm bột được phun ra đều đặn trong thời gian dài.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/auto_injector5.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Tối ưu hoá trong khâu thay đổi màu sắc </h3>
+                <p>Với thiết kế độc đáo cho việc vận chuyển bột dễ dàng với các van khoá chặt, OptiFlow bảo đảm cho việc tối ưu hoá thay đổi màu sắc.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/auto_injector6.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Giảm thiểu độ hao mòn phụ tùng</h3>
+                <p>OptiFlow Injector có thể nhận nhiều bột hơn với ít khí nén. Điều này giảm thiểu độ hao mòn của phụ tùng injector và súng phun.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

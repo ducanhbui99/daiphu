@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block title %} Bộ điều khiển súng trung tâm {% endblock%}
+
+
+{% block content %}
+<!-- description -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../../../static/theme/assets/img/equip_auto/multistar-bg.jpeg" alt="First slide">
+      </div>
+    </div>
+</div>
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_auto_url }}">Thiết Bị Phun Tự Động</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ multistar_url }}">Bộ Điều Khiển Súng Trung Tâm</a></li>
+    </ol>
+</nav>
+<!--content -->
+<div class="row">
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/multistar1.jpeg" class="card-img-top img-fluid2" alt="" title="MultiStar CG10">
+            <div class="card-body">
+                <h3 class="card-title text-red">Kiểm soát dễ dàng và nhanh chóng với nhiều súng</h3>
+                <p>Bảng điều khiển có thể dễ dàng sữ dụng để vận hành và cho phép kiểm soát và đặt thông tin kỹ thuật cho 12 súng cùng lúc.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/multistar2.jpeg" class="card-img-top img-fluid2" alt="" title="OptiGun">
+            <div class="card-body">
+                <h3 class="card-title text-red">Kiểm soát từng súng và các chế độ kiểm soát</h3>
+                <p>Người dùng có thể điều chỉnh lượng bột ra của 1 hệ thống hoặc của từng súng. Điều này giúp tiết kiệm bột và duy trì màng sơn tuyệt vời.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/multistar3.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Giải pháp tối ưu cho khối lượng súng lớn</h3>
+                <p>MultiStar là giải pháp tuyệt vời cho các sản phẩm phun đứng như nhôm, hình xoán và các sản phẩm khác cần nhiều súng.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/multistar4.jpeg" class="card-img-top img-fluid2" alt="" title="OptiGun spraying">
+            <div class="card-body">
+                <h3 class="card-title text-red">Giá thành tốt nhất cho các hệ thống phun sơn cơ bản</h3>
+                <p>MultiStar giúp giải quyết các vấn đề kỹ thuật nan giải ở mức giá cả hợp lí, thích hợp cho nhiều nhu cầu khác nhau.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/multistar5.jpeg" class="card-img-top img-fluid2" alt="" title="MultiStar CG10">
+            <div class="card-body">
+                <h3 class="card-title text-red">Dễ dàng sử dụng ngay cả với người mới</h3>
+                <p>MultiStar rất dễ dàng vận hành và tích hợp sẵn 3 chế độ phun cho sản phẩm nằm ngang, dọc, và sơn phủ lại theo kinh nghiệm của Gema.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4" data-categories="[0]">
+        <div class="card h-100 text-center gcard">
+            <img src="../../../static/theme/assets/img/equip_auto/multistar6.jpeg" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Đa dạng và linh hoạt tuỳ lĩnh vực</h3>
+                <p>MultiStar cho phép người dùng tạo và lưu trữ dữ liệu thông số của chương trình sơn, giúp tối ưu cho người dùng và bột sử dụng. </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

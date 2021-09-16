@@ -1,0 +1,243 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Thiết Bị Phun Tự Động
+{% endblock%}
+
+{% block content %}
+
+<!-- carousel slide-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <img class="d-block w-100 " src="../../static/theme/assets/img/equip_auto/auto1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " src="../../static/theme/assets/img/equip_auto/auto2.jpg" alt="Second slide">
+    </div>
+  </div>
+</div>
+<!--breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_auto_url }}">Thiết Bị Phun Tự Động</a></li>
+    </ol>
+</nav>
+<!--content-->
+
+
+<div class="row">
+  <!-- item 1-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center gcard zoomIn animated">
+          <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_gun.jpg" alt="..." />
+          <div class="card-body" >
+            <h3 class="card-title text-red">Súng Phun Tự Động OptiGun: hiệu quả và dễ sửa dụng</h3>
+            <p>Súng Phun Tự Động Optigun giúp cho việc phun bột hiệu quả hơn và hoàn hảo hơn. Optigun là lựa chọn thích hợp nhất cho công việc đổi màu sơn.</p>
+          </div>
+          <div class="card-footer text-white" style="font-size:18px;">
+              <a class="text-decoration-none stretched-link" href="{{ optigun_url }}">
+                  <div style="color:black"><span class="fas fa-link"></span>&#9 Súng Phun</div>
+              </a>
+          </div>                  
+      </div>
+  </div>
+  <!-- item 2-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_control.jpg" alt="..." />
+        <div class="card-body" >
+          <h3 class="card-title text-red">Bộ Điều Khiển Trung Tâm OptiFlex®</h3>
+          <p> Bộ trung tâm điều khiển có thể dễ dàng tuỳ chọn theo yêu cầu khách hàng. Bộ điều khiển này giúp cho việc sử dụng dễ dàng hơn và tiết kiệm năng lượng hơn</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ optiflex_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Bộ Điều Khiển Trung Tâm</div>
+            </a>
+        </div>                  
+    </div>
+</div>
+  <!-- item 3-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_pump.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red"> Máy Bơm Bột OptiSpray AP01: sự ra đời của công nghệ bơm bột</h3>
+          <p>Màng sơn được phun lên 1 cách hoàn hảo sẽ được duy trì trong thời gian dài, ngay cả với ống dẫn bột dài hơn và dung tích bột ra nhiều hơn</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ optispray_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Máy Bơm Bột</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 4-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_injector.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Injector OptiFlow cho hệ thống tự động</h3>
+          <p>Bảo đảm dung tích bột được phun ra đều đặn. Thích hợp cho việc đổi màu bột và giá điều hành thấp với công nghệ injecotr tiên tiến nhất.</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ auto_injector_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Injector</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 5-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_gun_control.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Module Điều Khiển Súng Phun OptiStar® 4.0: <br>Tiêu chuẩn cho việc điều khiển súng phun tự động </h3>
+          <p>Điều khiển những thông số kỹ thuật quan trọng nhất trong quá trình phun sơn và đưa ra kết quả tuyệt vời. Khách hàng có thể theo dõi thông số qua điện thoại với App của Gema</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ optistar_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Module Điều Khiển Súng Phun</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 6-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_multiguns_control.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Bộ Điều Khiển Súng Trung Tâm MultiStar:<br> chính xác và hiệu quả</h3>
+          <p>MultiStar có thể điều khiển tới 12 súng cùng lúc với chỉ duy nhất 1 màn ảnh</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ multistar_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Bộ Điều Khiển Súng Trung Tâm</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 7-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_powder_management.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Bộ Điều Khiển Bột Trung Tâm và Thùng Chưa Bột Opticenter</h3>
+          <p>OptiCenters là trung tâm trong quy trình phun sơn. Opticenters cho người dùng sản phẩm tuyệt vời và linh hoạt trong việc thay đổi màu</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ powder_center_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Bộ Điều Khiển Bột Trung Tâm</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 8-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_powder_hopper.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Thùng Chứa Bột:<br>Cách giải quyết cho mọi nhu cầu</h3>
+          <p>Gema mang đến cho khách hàng nhiều lựa chọn cho thùng chứa bột với các dung tích khác nhau, nhưng vẫn đảm bảo độ tơi của bột được duy trì trong tình trạng hoàn hảo.</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ powder_hopper_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Thùng Chứa Bột</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 9-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_booth.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Buồng Phun Tự Động MagicCylinder® EquiFlow®: cách giải quyết duy nhất với hệ thống buồng vòng cung</h3>
+          <p>MagicCylinder mang đến giải pháp tối ưu nhất cho việc thay đổi màu nhờ vào thiết kế vòng cung độc lạ và bằng sáng chế công nghệ EquiFlow</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ auto_booth_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Buồng Phun Tự Động</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 10-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_enamel_booth.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Hệ Thống Buồng Phun cho Bột Enamel</h3>
+          <p>Công nghệ EquiFlow tượng trung cho việc đổi màu nhanh và hiệu quả. Sử dụng những nguyên liệu không dẫn điện kết hợp với công nghệ EquiFlow và Bộ điều khiển bột trung tâm OptiCenter bảo đảm cho việc dọn buồng phun 1 cách nhanh nhất và tối ưu hoá bề mặt được phun ra.</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ enamel_booth_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Buồng Phun Cho Bột Enamel</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 10-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_recip.jpg" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title text-red">Tay Robot: <br> Cho phép khối lượng tải lớn</h3>
+          <p>Tay robot có năng suất cao được thiết kế nhỏ gọn, với độ chính xác cực cao và dễ sử dụng</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ reciprocator_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Tay Robot</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 11-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img src="../../../static/theme/assets/img/equip_auto/reciprocator11.jpeg" class="card-img-top img-fluid3" alt="" title="OptiMove">
+        <div class="card-body">
+            <h3 class="card-title text-red"> Module Điều Khiển Tay Robot OptiMove: <br> Hiệu suất cao và dễ sử dụng</h3>
+            <p>Module điều khiển với sự linh và dễ sử dụng được dùng cho mọi tay Robot được sản xuất bới Gema.</p>
+        </div>
+        <div class="card-footer bg-gray-500 text-white">
+            <a class="text-decoration-none stretched-link" href="{{ optimove_url }}">
+                <div style="color: black">
+                    <span class="fas fa-link"></span> Module Điều Khiển Tay Robot
+                </div>
+                
+            </a>
+        </div>
+    </div>
+  </div>
+  <!-- item 12-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center gcard zoomIn animated">
+          <img src="../../../static/theme/assets/img/equip_auto/reciprocator12.jpeg" class="card-img-top img-fluid3" alt="" title=""><div class="card-body">
+              <h3 class="card-title text-red">Module Điều Khiển Tay Robot Tự Động MagicControl 4.0: <br> Đi tiên phong trong lĩnh vực tự động hoá nhà xưởng</h3>
+              <p>Hệ thống điều khiển bảo đảm kết nối tới mọi cấu tạo của hệ thống, tạo nên năng suất cao hơn và dễ dàng trong khâu quản lý.</p>
+          </div>
+          <div class="card-footer bg-gray-500 text-white">
+              <div style="color: black"></div>
+              <a class="text-decoration-none stretched-link" href="{{ magic_control_url}}">
+                  <div style="color: black">
+                      <span class="fas fa-link"></span> Module Điều Khiển Tay Robot Tự Động
+                  </div>
+                  
+              </a>
+          </div>
+      </div>
+  </div>
+  
+
+</div>
+
+
+
+{% endblock %}

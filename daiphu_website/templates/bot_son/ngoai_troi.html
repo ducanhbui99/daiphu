@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} 
+Bột Sơn Ngoài Trời
+{% endblock%}
+
+{% block content %}
+
+<!-- carousel slide-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <img class="d-block w-100 " src="../../static/theme/assets/img/equip_auto/auto1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item" >
+      <img class="d-block w-100 " src="../../static/theme/assets/img/equip_auto/auto2.jpg" alt="Second slide">
+    </div>
+  </div>
+</div>
+<!--breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ bot_son_url }}">Bột Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ ngoai_troi_url }}">Bột Sơn Ngoài Trời</a></li>
+    </ol>
+</nav>
+
+<!--content-->
+<div class="row">
+  <!-- item 1-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+      <div class="card h-100 text-center gcard zoomIn animated">
+          <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_gun.jpg" alt="..." />
+          <div class="card-body" >
+            <h3 class="card-title text-red">Hệ Polyester-HAA</h3>
+            <p>Dòng sản phẩm bột sơn sử dụng nhựa hệ Polyester-HAA</p>
+          </div>
+          <div class="card-footer text-white" style="font-size:18px;">
+              <a class="text-decoration-none stretched-link" href="{{ he_polyester_haa_url }}">
+                  <div style="color:black"><span class="fas fa-link"></span>&#9 Hệ Polyester-HAA</div>
+              </a>
+          </div>                  
+      </div>
+  </div>
+  <!-- item 2-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_control.jpg" alt="..." />
+        <div class="card-body" >
+          <h3 class="card-title text-red">Hệ Polyester-TGIC</h3>
+          <p>Dòng sản phẩm bột sơn sử dụng nhựa hệ Polyester-TGIC</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ he_polyester_tgic_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Hệ Polyester-TGIC</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+  <!-- item 3-->
+  <div class="col-lg-3 col-sm-6 mb-4">
+    <div class="card h-100 text-center gcard zoomIn animated">
+        <img class="img-fluid3 card-img-top" src="../../static/theme/assets/img/equip_auto/auto_control.jpg" alt="..." />
+        <div class="card-body" >
+          <h3 class="card-title text-red">Hệ Polyester-Urithane</h3>
+          <p>Dòng sản phẩm bột sơn sử dụng nhựa hệ Polyester-Urithane</p>
+        </div>
+        <div class="card-footer text-white" style="font-size:18px;">
+            <a class="text-decoration-none stretched-link" href="{{ he_polyester_urethane_url }}">
+                <div style="color:black"><span class="fas fa-link"></span>&#9 Hệ Polyester-Urithane</div>
+            </a>
+        </div>                  
+    </div>
+  </div>
+</div>
+{% endblock%}

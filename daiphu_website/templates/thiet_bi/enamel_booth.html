@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+
+{% block title %} Buồng Phun cho bột Enamel{% endblock%}
+
+
+{% block content %}
+<!-- description -->
+<!-- description -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../../../static/theme/assets/img/equip_auto/enamel-booth-bg.png" alt="First slide">
+      </div>
+    </div>
+</div>
+<!-- breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ san_pham_url }}">Sản Phẩm</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ thiet_bi_url }}">Thiết Bị Phun Sơn</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ equip_auto_url }}">Thiết Bị Phun Tự Động</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{{ enamel_booth_url }}">Buồng Phun Tự Động Cho Bột Enamel</a></li>
+    </ol>
+</nav>
+<!--content-->
+<div class="row">
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_auto/enamel-booth1.png" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Hệ thống buồng cho bột Enamel cho 1 màu</h3>
+                <p>Buồng Phun MRS là 1 mô hình đa năng cho tất cả công trình sơn 1 màu bột enamel. Sự linh hoạt và chống hao mòn của buồng phun được thiết kế để cho ra sản phẩm với hiệu suất và chất lượng tốt nhất với loại bột enamel.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 mb-4">
+        <div class="card h-100 text-center gcard zoomIn animated">
+            <img src="../../../static/theme/assets/img/equip_auto/enamel-booth2.png" class="card-img-top img-fluid2" alt="" title="">
+            <div class="card-body">
+                <h3 class="card-title text-red">Hệ thống buồng cho bột Enamel với tính năng đổi màu đổi màu</h3>
+                <p>Công nghệ buồng EquiFlow BA04-E is thiết kế đặc biệt cho công trình cần thiết việc đổi màu. Với việc dùng các thành phần với tính chất cách điện kết hợp với công nghệ EquiFlow và bộ điều khiển bột trung tâm đảm bảo buồng được dọn sạch sẽ trong thời gian ngắn nhất để cải thiện chất lượng màng sơn.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
